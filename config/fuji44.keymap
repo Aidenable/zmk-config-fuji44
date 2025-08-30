@@ -53,10 +53,10 @@
 
         base {
             bindings = <
-&kp ESC    &kp Q  &kp W   &kp E             &kp R         &kp T               &kp Y      &kp U              &kp I      &kp O    &kp P     &kp DELETE
+&kp ESC    &kp Q  &kp W   &kp E             &kp R         &kp T               &kp Y      &kp U              &kp I      &kp O    &kp P     &kp BACKSPACE
 &kp TAB    &kp A  &kp S   &kp D             &kp F         &kp G               &kp H      &kp J              &kp K      &kp L    &kp SEMI  &kp RETURN
-&kp LSHFT  &kp Z  &kp X   &kp C             &kp V         &kp B               &kp N      &kp M              &kp COMMA  &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
-                  &tog 1  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_COMMAND    &kp SPACE  &kp RIGHT_COMMAND  &kp RALT   &tog 3
+&kp LSHFT  &kp Z  &kp X   &lt 1 C           &lt 2 V       &lt 3 B             &kp N      &kp M              &kp COMMA  &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
+                  &tog 1  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_COMMAND    &kp SPACE  &kp RIGHT_COMMAND  &kp RALT   &tog 2
             >;
         };
 
@@ -69,15 +69,6 @@
             >;
         };
 
-        sys {
-            bindings = <
-&bootloader  &trans  &trans  &trans  &trans  &trans    &trans  &bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &bootloader
-&trans       &trans  &trans  &trans  &trans  &trans    &trans  &trans        &trans          &trans        &trans        &trans
-&sys_reset   &trans  &trans  &trans  &trans  &trans    &trans  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &sys_reset
-                     &trans  &trans  &trans  &trans    &trans  &trans        &trans          &trans
-            >;
-        };
-
         num {
             bindings = <
 &kp LEFT_PARENTHESIS   &kp MINUS   &kp N7        &kp N8        &kp N9        &kp PLUS        &trans  &trans           &trans     &trans    &trans         &trans
@@ -87,12 +78,12 @@
             >;
         };
 
-        sym {
+        sys {
             bindings = <
-&kp LEFT_BRACE   &kp MINUS  &kp AMPERSAND          &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp PLUS        &trans  &trans      &trans     &trans        &trans         &trans
-&kp COMMA        &kp DOT    &kp DOLLAR             &kp PERCENT   &kp CARET             &kp EQUAL       &trans  &kp RSHIFT  &kp RCTRL  &kp LEFT_ALT  &kp RIGHT_WIN  &trans
-&kp RIGHT_BRACE  &kp SLASH  &kp EXCL               &kp AT_SIGN   &kp HASH              &kp ASTERISK    &trans  &trans      &trans     &trans        &trans         &trans
-                            &kp RIGHT_PARENTHESIS  &kp GRAVE     &trans                &kp SPACE       &trans  &trans      &trans     &trans
+&bootloader  &trans  &trans  &trans  &trans  &trans    &trans  &bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &bootloader
+&trans       &trans  &trans  &trans  &trans  &trans    &trans  &trans        &trans          &trans        &trans        &trans
+&sys_reset   &trans  &trans  &trans  &trans  &trans    &trans  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &sys_reset
+                     &trans  &trans  &trans  &trans    &trans  &trans        &trans          &trans
             >;
         };
     };
