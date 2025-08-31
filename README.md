@@ -13,7 +13,7 @@
 <img width="4932" height="2372" alt="image" src="https://github.com/user-attachments/assets/31056333-a582-4ad1-87ae-95f32d6ae3b2" />
 
 ### NUM
-<img width="4932" height="2372" alt="image" src="https://github.com/user-attachments/assets/a3cd358e-c929-4c38-8918-5d8a0e9eac5e" />
+<img width="4610" height="2980" alt="image" src="https://github.com/user-attachments/assets/769ed9f9-e39b-4e38-b320-4d0186c39239" />
 
 ### NAV
 <img width="4610" height="2980" alt="image" src="https://github.com/user-attachments/assets/b995a177-7dac-430b-ba42-9020c99715f8" />
