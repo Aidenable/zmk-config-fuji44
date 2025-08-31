@@ -1,4 +1,4 @@
-# Fuji44 (Corne42 Modification)
+# Fuji44 (Corne42 Choc Modification)
 
 <img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/3b27ee72-c791-4b53-ad9f-76a238dc579a" />
 
