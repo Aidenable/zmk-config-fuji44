@@ -53,6 +53,22 @@
             require-prior-idle-ms = <125>;
             bindings = <&kp>, <&kp>;
         };
+
+        cmd_caps_tapdance: cmd_caps_tapdance {
+            compatible = "zmk,behavior-tap-dance";
+            label = "CMD_CAPS_TAPDANCE";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_COMMAND>, <&kp CAPSLOCK>;
+        };
+
+        hold_tap_layer: hold_tap_layer {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_TAP_LAYER";
+            bindings = <&mo>, <&tog>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <250>;
+        };
     };
 
     keymap {
@@ -60,17 +76,17 @@
 
         base {
             bindings = <
-&kp ESC       &kp Q  &kp W   &kp E    &kp R      &mt BACKSLASH T     &kp Y                &kp U            &kp I              &kp O                &kp P     &mt RIGHT_BRACKET LEFT_BRACKET
-&kp TAB       &kp A  &kp S   &kp D    &kp F      &kp G               &hrm LEFT_COMMAND H  &hrm LEFT_ALT J  &hrm LEFT_SHIFT K  &hrm LEFT_CONTROL L  &kp SEMI  &kp SINGLE_QUOTE
-&kp LEFT_ALT  &kp Z  &kp X   &lt 3 C  &lt 2 V    &lt 1 B             &kp N                &kp M            &kp COMMA          &kp DOT              &kp FSLH  &kp RIGHT_CONTROL
-                     &tog 2  &tog 1   &kp ENTER  &kp LEFT_COMMAND    &kp LEFT_SHIFT       &kp SPACE        &kp BACKSPACE      &mo 3
+&kp ESC       &kp Q                &kp W                &kp E                &kp R                &mt BACKSLASH T       &kp Y           &kp U                       &kp I                     &kp O                         &kp P                   &mt RIGHT_BRACKET LEFT_BRACKET
+&kp TAB       &hrm LEFT_CONTROL A  &hrm LEFT_SHIFT S    &hrm LEFT_ALT D      &hrm LEFT_COMMAND F  &kp G                 &kp H           &hrm LEFT_ALT LEFT_COMMAND  &hrm LEFT_SHIFT LEFT_ALT  &hrm LEFT_CONTROL LEFT_SHIFT  &hrm SEMI LEFT_CONTROL  &kp SINGLE_QUOTE
+&kp LEFT_ALT  &kp Z                &kp X                &lt 3 C              &lt 2 V              &lt 1 B               &kp N           &kp M                       &kp COMMA                 &kp DOT                       &kp FSLH                &kp RIGHT_CONTROL
+                                   &hold_tap_layer 2 2  &hold_tap_layer 1 1  &kp ENTER            &cmd_caps_tapdance    &kp LEFT_SHIFT  &kp SPACE                   &kp BACKSPACE             &mo 3
             >;
         };
 
         num {
             bindings = <
 &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5    &kp NUMBER_6  &kp N7  &kp N8  &kp N9  &kp N0  &none
-&trans  &none         &none         &none         &none         &none     &trans        &trans  &trans  &trans  &none   &none
+&trans  &trans        &trans        &trans        &trans        &none     &none         &trans  &trans  &trans  &trans  &none
 &trans  &none         &none         &none         &none         &none     &none         &none   &none   &none   &none   &trans
                       &trans        &trans        &trans        &trans    &trans        &trans  &trans  &trans
             >;
