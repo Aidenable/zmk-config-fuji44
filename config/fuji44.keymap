@@ -77,7 +77,7 @@
         base {
             bindings = <
 &kp ESC       &kp Q                &kp W                &kp E                &kp R                &mt BACKSLASH T    &kp Y           &kp U            &kp I            &kp O              &kp P                        &mt RIGHT_BRACKET LEFT_BRACKET
-&kp TAB       &hrm LEFT_CONTROL A  &hrm LEFT_SHIFT S    &hrm LEFT_ALT D      &hrm LEFT_COMMAND F  &kp G              &kp H           &hrm LEFT_GUI O  &hrm LEFT_ALT K  &hrm LEFT_SHIFT L  &hrm LEFT_CONTROL SEMICOLON  &kp SINGLE_QUOTE
+&kp TAB       &hrm LEFT_CONTROL A  &hrm LEFT_SHIFT S    &hrm LEFT_ALT D      &hrm LEFT_COMMAND F  &kp G              &kp H           &hrm LEFT_GUI J  &hrm LEFT_ALT K  &hrm LEFT_SHIFT L  &hrm LEFT_CONTROL SEMICOLON  &kp SINGLE_QUOTE
 &kp LEFT_ALT  &kp Z                &kp X                &lt 3 C              &lt 2 V              &lt 1 B            &kp N           &kp M            &kp COMMA        &kp DOT            &kp FSLH                     &kp RIGHT_CONTROL
                                    &hold_tap_layer 2 2  &hold_tap_layer 1 1  &kp ENTER            &kp CAPSLOCK       &kp LEFT_SHIFT  &kp SPACE        &kp BACKSPACE    &mo 3
             >;
