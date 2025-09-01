@@ -40,7 +40,6 @@
             compatible = "zmk,behavior-tap-dance";
             label = "KH_HS_TAPDANCE";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
             bindings = <&kp LEFT_BRACKET>, <&kp RIGHT_BRACKET>;
         };
 
@@ -54,11 +53,11 @@
             bindings = <&kp>, <&kp>;
         };
 
-        cmd_caps_tapdance: cmd_caps_tapdance {
+        t_backslash_tapdance: t_backslash_tapdance {
             compatible = "zmk,behavior-tap-dance";
-            label = "CMD_CAPS_TAPDANCE";
+            label = "T_BACKSLASH_TAPDANCE";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_COMMAND>, <&kp CAPSLOCK>;
+            bindings = <&kp T>, <&kp BACKSLASH>;
         };
 
         hold_tap_layer: hold_tap_layer {
@@ -76,19 +75,19 @@
 
         base {
             bindings = <
-&kp ESC       &kp Q                &kp W                &kp E                &kp R                &mt BACKSLASH T     &kp Y           &kp U            &kp I            &kp O              &kp P                        &mt RIGHT_BRACKET LEFT_BRACKET
-&kp TAB       &hrm LEFT_CONTROL A  &hrm LEFT_SHIFT S    &hrm LEFT_ALT D      &hrm LEFT_COMMAND F  &kp G               &kp H           &hrm LEFT_GUI J  &hrm LEFT_ALT K  &hrm LEFT_SHIFT L  &hrm LEFT_CONTROL SEMICOLON  &kp SINGLE_QUOTE
-&kp LEFT_ALT  &kp Z                &kp X                &lt 3 C              &lt 2 V              &lt 1 B             &kp N           &kp M            &kp COMMA        &kp DOT            &kp FSLH                     &kp RIGHT_CONTROL
-                                   &hold_tap_layer 2 2  &hold_tap_layer 1 1  &kp ENTER            &kp LEFT_COMMAND    &kp LEFT_SHIFT  &kp SPACE        &kp BACKSPACE    &mo 3
+&kp ESC       &kp Q                &kp W              &kp E                &kp R                &t_backslash_tapdance    &kp Y           &kp U            &kp I            &kp O              &kp P                        &kh_hs_tapdance
+&kp TAB       &hrm LEFT_CONTROL A  &hrm LEFT_SHIFT S  &hrm LEFT_ALT D      &hrm LEFT_COMMAND F  &kp G                    &kp H           &hrm LEFT_GUI J  &hrm LEFT_ALT K  &hrm LEFT_SHIFT L  &hrm LEFT_CONTROL SEMICOLON  &kp SINGLE_QUOTE
+&kp LEFT_ALT  &kp Z                &kp X              &lt 3 C              &lt 2 V              &lt 1 B                  &kp N           &kp M            &kp COMMA        &kp DOT            &kp FSLH                     &kp RIGHT_CONTROL
+                                   &mo 2              &hold_tap_layer 1 1  &kp ENTER            &kp LEFT_COMMAND         &kp LEFT_SHIFT  &kp SPACE        &kp BACKSPACE    &mo 3
             >;
         };
 
         num {
             bindings = <
-&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5    &kp NUMBER_6  &kp N7  &kp N8  &kp N9  &kp N0  &none
-&trans  &trans        &trans        &trans        &trans        &none     &none         &trans  &trans  &trans  &trans  &none
-&trans  &none         &none         &none         &none         &none     &none         &none   &none   &none   &none   &trans
-                      &trans        &trans        &trans        &trans    &trans        &trans  &trans  &trans
+&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5       &kp NUMBER_6  &kp N7  &kp N8  &kp N9  &kp N0  &kp MINUS
+&trans  &trans        &trans        &trans        &trans        &kp TILDE    &kp CAPS      &trans  &trans  &trans  &trans  &kp PLUS
+&trans  &none         &none         &none         &none         &none        &none         &none   &none   &none   &none   &trans
+                      &trans        &trans        &trans        &trans       &trans        &trans  &trans  &trans
             >;
         };
 
