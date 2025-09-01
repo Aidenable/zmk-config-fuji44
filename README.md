@@ -7,19 +7,19 @@
 ### BASE
 
 ##### 🇺🇸 EN
-<img width="6692" height="2980" alt="image" src="https://github.com/user-attachments/assets/eb80e4e6-623a-49ae-a9f3-6ffb007d8afe" />
+<img width="6692" height="2980" alt="image" src="https://github.com/user-attachments/assets/8166c3e7-7aa9-4ac2-ab9f-af8c0aea5be1" />
 
 ##### 🇷🇺 RU
-<img width="4932" height="2372" alt="image" src="https://github.com/user-attachments/assets/31056333-a582-4ad1-87ae-95f32d6ae3b2" />
+<img width="4932" height="2372" alt="image" src="https://github.com/user-attachments/assets/dab8cfa4-f4af-4637-8d8f-0136455514fe" />
 
 ### NUM
-<img width="4610" height="2980" alt="image" src="https://github.com/user-attachments/assets/769ed9f9-e39b-4e38-b320-4d0186c39239" />
+<img width="4610" height="2980" alt="image" src="https://github.com/user-attachments/assets/29c50013-5ccb-4fde-80cb-5c9438b57146" />
 
 ### NAV
-<img width="4610" height="2980" alt="image" src="https://github.com/user-attachments/assets/b995a177-7dac-430b-ba42-9020c99715f8" />
+<img width="4610" height="2980" alt="image" src="https://github.com/user-attachments/assets/698a627b-6064-463a-b438-ea73ef421a9d" />
 
 ### SYS
-<img width="4610" height="2980" alt="image" src="https://github.com/user-attachments/assets/f7d76c10-7922-4c9a-a9d1-535962185c90" />
+<img width="4610" height="2980" alt="image" src="https://github.com/user-attachments/assets/12229acd-1802-41d7-9c78-e338a7bf7b1f" />
 
 ## Links:
 - Keymap Editor — https://nickcoutsos.github.io/keymap-editor/
