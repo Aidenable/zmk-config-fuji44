@@ -16,7 +16,7 @@
 <img width="4610" height="2980" alt="image" src="https://github.com/user-attachments/assets/29c50013-5ccb-4fde-80cb-5c9438b57146" />
 
 ### NAV
-<img width="4610" height="2980" alt="image" src="https://github.com/user-attachments/assets/698a627b-6064-463a-b438-ea73ef421a9d" />
+<img width="4610" height="2980" alt="image" src="https://github.com/user-attachments/assets/a85bfe4a-4083-47da-8bac-d2eb9cb58663" />
 
 ### SYS
 <img width="4610" height="2980" alt="image" src="https://github.com/user-attachments/assets/12229acd-1802-41d7-9c78-e338a7bf7b1f" />
