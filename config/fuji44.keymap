@@ -91,7 +91,7 @@
 
         num {
             bindings = <
-&trans  &none         &none   &none   &none      &kp BACKSLASH    &none   &kp N7        &kp N8        &kp N9        &kp PLUS      &none
+&trans  &none         &none   &none   &none      &kp BACKSLASH    &none   &kp N7        &kp N8        &kp N9        &kp EQUAL     &none
 &trans  &trans        &trans  &trans  &trans     &kp GRAVE        &none   &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS     &none
 &trans  &kp CAPSLOCK  &none   &none   &kp COMMA  &kp DOT          &none   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_0  &trans
                       &trans  &trans  &trans     &trans           &trans  &trans        &trans        &trans
