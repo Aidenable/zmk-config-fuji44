@@ -75,6 +75,16 @@
             #binding-cells = <2>;
             tapping-term-ms = <250>;
         };
+
+        preferred_tap_with_hold: preferred_tap_with_hold {
+            compatible = "zmk,behavior-hold-tap";
+            label = "PREFERRED_TAP_WITH_HOLD";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <100>;
+            flavor = "tap-preferred";
+        };
     };
 
     keymap {
@@ -82,10 +92,10 @@
 
         base {
             bindings = <
-&kp ESC       &kp Q                &kp W              &kp E                &kp R                &t_backslash_tapdance    &kp Y           &kp U      &kp I          &kp O    &kp P     &kh_hs_tapdance
-&kp TAB       &hrm LEFT_CONTROL A  &hrm LEFT_SHIFT S  &hrm LEFT_ALT D      &hrm LEFT_COMMAND F  &kp G                    &kp H           &kp J      &kp K          &kp L    &kp SEMI  &kp SINGLE_QUOTE
-&kp LEFT_ALT  &kp Z                &kp X              &lt 3 C              &lt 2 V              &lt 1 B                  &kp N           &kp M      &kp COMMA      &kp DOT  &kp FSLH  &kp RIGHT_CONTROL
-                                   &mo 2              &hold_tap_layer 1 1  &kp ENTER            &kp LEFT_COMMAND         &kp LEFT_SHIFT  &kp SPACE  &kp BACKSPACE  &mo 3
+&kp ESC       &kp Q                &kp W              &kp E                &kp R                &preferred_tap_with_hold BACKSLASH T    &kp Y           &kp U      &kp I          &kp O    &kp P     &kh_hs_tapdance
+&kp TAB       &hrm LEFT_CONTROL A  &hrm LEFT_SHIFT S  &hrm LEFT_ALT D      &hrm LEFT_COMMAND F  &kp G                                   &kp H           &kp J      &kp K          &kp L    &kp SEMI  &kp SINGLE_QUOTE
+&kp LEFT_ALT  &kp Z                &kp X              &lt 3 C              &lt 2 V              &lt 1 B                                 &kp N           &kp M      &kp COMMA      &kp DOT  &kp FSLH  &kp RIGHT_CONTROL
+                                   &mo 2              &hold_tap_layer 1 1  &kp ENTER            &kp LEFT_COMMAND                        &kp LEFT_SHIFT  &kp SPACE  &kp BACKSPACE  &mo 3
             >;
         };
 
