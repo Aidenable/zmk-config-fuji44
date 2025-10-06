@@ -100,10 +100,10 @@
 
         nav {
             bindings = <
-&trans  &none  &none   &msc SCRL_DOWN   &mmv MOVE_UP    &msc SCRL_UP       &none      &none      &none   &none      &none  &none
-&trans  &none  &none   &mmv MOVE_LEFT   &mmv MOVE_DOWN  &mmv MOVE_RIGHT    &kp LEFT   &kp DOWN   &kp UP  &kp RIGHT  &none  &none
-&trans  &none  &none   &msc SCRL_RIGHT  &none           &msc SCRL_LEFT     &mkp LCLK  &mkp RCLK  &none   &none      &none  &trans
-               &trans  &trans           &trans          &trans             &trans     &trans     &trans  &trans
+&trans  &none  &mkp LCLK  &msc SCRL_DOWN   &mmv MOVE_UP    &msc SCRL_UP       &none      &none      &none      &none      &none  &none
+&trans  &none  &mkp MCLK  &mmv MOVE_LEFT   &mmv MOVE_DOWN  &mmv MOVE_RIGHT    &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &none  &none
+&trans  &none  &mkp RCLK  &msc SCRL_RIGHT  &none           &msc SCRL_LEFT     &mkp LCLK  &mkp MCLK  &mkp RCLK  &none      &none  &trans
+               &trans     &trans           &trans          &trans             &trans     &trans     &trans     &trans
             >;
         };
 
