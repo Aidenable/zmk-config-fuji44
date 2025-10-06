@@ -63,6 +63,8 @@
             label = "T_BACKSLASH_TAPDANCE";
             #binding-cells = <0>;
             bindings = <&kp T>, <&kp BACKSLASH>;
+
+            tapping-term-ms = <100>;
         };
 
         hold_tap_layer: hold_tap_layer {
